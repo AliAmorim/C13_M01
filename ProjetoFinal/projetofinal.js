@@ -111,10 +111,6 @@ reset: while (true) {
       console.log(
         'Ele começa a te contar sobre um assasinato que aconteceu em um beco do lado de um bar bem movimentado'
       )
-    } else {
-      console.log('Opção Inválida')
-      console.log()
-      break principal
     }
 
     console.log()
