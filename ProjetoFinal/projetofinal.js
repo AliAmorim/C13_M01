@@ -93,7 +93,6 @@ reset: while (true) {
     console.log(
       '2: Não se preocupa muito e resolve tomar um café da manhã (2 horas)'
     )
-
     console.log()
     let escolha = +prompt()
     console.log()
@@ -112,6 +111,10 @@ reset: while (true) {
       console.log(
         'Ele começa a te contar sobre um assasinato que aconteceu em um beco do lado de um bar bem movimentado'
       )
+    } else {
+      console.log('Opção Inválida')
+      console.log()
+      break principal
     }
 
     console.log()
