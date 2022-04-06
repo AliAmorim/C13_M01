@@ -4,7 +4,7 @@ const prompt = require('prompt-sync')()
 let continuar = 'sim'
 
 reset: while (true) {
-  principal: while (continuar == 'sim') {
+  principal: while (continuar.toLowerCase() == 'sim') {
     console.log('Crimes de L.A')
     console.log(
       '-------------------------------------------------------------------------------------------------------------------'
@@ -384,14 +384,13 @@ reset: while (true) {
       console.log('Deseja jogar novamente?')
       continuar = prompt()
       console.clear()
-      if (continuar.toLowerCase() == 'sim') {
+      if (continuar == 'sim') {
         break principal
       } else if (continuar.toLowerCase() == 'nao') {
         break reset
       }
     } else if ((escolha = !1 || 2)) {
       console.log('Opção Inválida - O jogo irá reiniciar')
-      console.log()
       console.log()
     }
   }
